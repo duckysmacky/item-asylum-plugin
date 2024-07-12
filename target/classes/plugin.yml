@@ -1,5 +1,5 @@
 name: ItemAsylum
-version: '${project.version}'
+version: '0.1.0'
 main: io.github.duckysmacky.itemasylum.ItemAsylum
 authors: [Ducky]
 description: An item asylum gamemode plugin for Minecraft

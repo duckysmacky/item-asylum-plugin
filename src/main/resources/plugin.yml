@@ -4,8 +4,8 @@ main: io.github.duckysmacky.itemasylum.ItemAsylum
 authors: [Ducky]
 description: An item asylum gamemode plugin for Minecraft
 commands:
-  menu:
-    description: Game control
+  game:
+    description: Main command for controlling "Item Asylum" gamemode
     usage: /<command>
     aliases:
       - g

@@ -1,5 +1,6 @@
 package io.github.duckysmacky.itemasylum;
 
+import io.github.duckysmacky.itemasylum.commands.GameCommand;
 import io.github.duckysmacky.itemasylum.game.GameState;
 import io.github.duckysmacky.itemasylum.listeners.RespawnListener;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -11,8 +12,10 @@ public final class ItemAsylum extends JavaPlugin {
     public void onEnable() {
         System.out.println("Item Asylum Plugin is starting up...");
 
-        GAME_STATUS = GameState.IN_PROGRESS;
+        GAME_STATUS = GameState.IDLE;
 
         getServer().getPluginManager().registerEvents(new RespawnListener(), this);
+
+        getCommand("game").setExecutor(new GameCommand());
     }
 }

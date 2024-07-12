@@ -1,11 +1,12 @@
 io\github\duckysmacky\itemasylum\listeners\RespawnListener.class
-io\github\duckysmacky\itemasylum\ItemAsylum.class
-io\github\duckysmacky\itemasylum\game\GameMode.class
-io\github\duckysmacky\itemasylum\items\Rarity.class
 io\github\duckysmacky\itemasylum\util\ChatUtils.class
 io\github\duckysmacky\itemasylum\items\CatalogItem.class
 io\github\duckysmacky\itemasylum\commands\GameCommand.class
 io\github\duckysmacky\itemasylum\items\ItemCatalog.class
+io\github\duckysmacky\itemasylum\ItemAsylum.class
+io\github\duckysmacky\itemasylum\game\GameMode.class
+io\github\duckysmacky\itemasylum\items\Rarity.class
+io\github\duckysmacky\itemasylum\items\ItemEnchantment.class
 io\github\duckysmacky\itemasylum\game\GameState.class
 io\github\duckysmacky\itemasylum\items\ItemController.class
 io\github\duckysmacky\itemasylum\commands\GameCommand$1.class

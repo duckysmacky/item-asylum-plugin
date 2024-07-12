@@ -39,12 +39,22 @@ public class ItemController {
     private static ItemStack getItem(CatalogItem itemData) {
         ItemStack item = new ItemStack(Material.valueOf(itemData.getItemId()), itemData.getItemQuantity());
         ItemMeta itemMeta = item.getItemMeta();
-        List<String> itemLore = new ArrayList<>();
 
-        itemMeta.setDisplayName(itemData.getDisplayName());
+        // lore
+        List<String> itemLore = new ArrayList<>();
         itemLore.add(itemData.getDisplayRarity());
+
+        // meta
+        itemMeta.setDisplayName(itemData.getDisplayName());
+        itemMeta.setUnbreakable(itemData.isUnbreakable());
         itemMeta.setLore(itemLore);
+        if (itemData.getItemEnchantments() != null)
+            for (ItemEnchantment enchantment : itemData.getItemEnchantments())
+                itemMeta.addEnchant(enchantment.getEnchantment(), enchantment.getModifier(), true);
+
+        // item
         item.setItemMeta(itemMeta);
+        if (itemData.getItemDurability() != 0) item.setDurability(itemData.getItemDurability());
 
         return item;
     }

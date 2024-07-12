@@ -2,6 +2,7 @@ package io.github.duckysmacky.itemasylum.commands;
 
 import io.github.duckysmacky.itemasylum.ItemAsylum;
 import io.github.duckysmacky.itemasylum.game.GameState;
+import io.github.duckysmacky.itemasylum.items.ItemController;
 import io.github.duckysmacky.itemasylum.util.ChatUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -16,10 +17,11 @@ public class GameCommand implements CommandExecutor {
         Player player = (Player) sender;
 
         switch (args[0]) {
+            case "help": return printHelp(player);
             case "start": return setGameStatus(GameState.IN_PROGRESS);
             case "stop": return setGameStatus(GameState.IDLE);
             case "status": return printGameStatus(player);
-            case "help": return printHelp(player);
+            case "reroll": return rerollItems(player);
             default: return unknownCommand(player);
         }
     }
@@ -29,6 +31,7 @@ public class GameCommand implements CommandExecutor {
         player.sendMessage("/game start - start the game");
         player.sendMessage("/game stop - stop the game");
         player.sendMessage("/game status - get game status");
+        player.sendMessage("/game reroll - reroll items");
         return true;
     }
 
@@ -43,6 +46,11 @@ public class GameCommand implements CommandExecutor {
 
     private boolean printGameStatus(Player player) {
         player.sendMessage("Game is " + ItemAsylum.GAME_STATUS.toString());
+        return true;
+    }
+
+    private boolean rerollItems(Player player) {
+        ItemController.giveItems(player);
         return true;
     }
 

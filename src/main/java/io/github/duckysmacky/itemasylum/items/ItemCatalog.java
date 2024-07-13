@@ -18,22 +18,22 @@ public class ItemCatalog {
         MELEE_ITEMS = new ArrayList<>();
         MELEE_ITEMS.add(new CatalogItem("Stone Sword", "STONE_SWORD", Rarity.COMMON));
         MELEE_ITEMS.add(new CatalogItem("Gold Sword", "GOLD_SWORD", Rarity.UNCOMMON));
-        MELEE_ITEMS.add(new CatalogItem("Power Stick", "STICK", Rarity.UNCOMMON, new ItemEnchantment[]{
-            new ItemEnchantment(Enchantment.KNOCKBACK, 20)
-        }));
+        MELEE_ITEMS.add(new CatalogItem("Power Stick", "STICK", Rarity.UNCOMMON,
+            new ItemEnchantment(Enchantment.KNOCKBACK, 20)));
         MELEE_ITEMS.add(new CatalogItem("Diamond Sword", "DIAMOND_SWORD", Rarity.RARE));
 
         // RANGED ITEMS
         RANGED_ITEMS = new ArrayList<>();
-        RANGED_ITEMS.add(new CatalogItem("Bow", "BOW", Rarity.COMMON, "ARROW", 32));
-        RANGED_ITEMS.add(new CatalogItem("Fire Bow", "BOW", Rarity.UNCOMMON, new ItemEnchantment[]{
-            new ItemEnchantment(Enchantment.ARROW_FIRE, 1)
-        }, "ARROW", 32));
-        RANGED_ITEMS.add(new CatalogItem("Yeet Bow", "BOW", Rarity.RARE, new ItemEnchantment[]{
-            new ItemEnchantment(Enchantment.ARROW_KNOCKBACK, 20)
-        }, "ARROW", 3));
-        RANGED_ITEMS.add(new CatalogItem("The Better Bow", "BOW", Rarity.RARE, new ItemEnchantment[]{
-            new ItemEnchantment(Enchantment.ARROW_DAMAGE, 15), new ItemEnchantment(Enchantment.ARROW_INFINITE, 1)
+        RANGED_ITEMS.add(new CatalogItem("Bow", "BOW", Rarity.COMMON,
+            "ARROW", 32));
+        RANGED_ITEMS.add(new CatalogItem("Fire Bow", "BOW", Rarity.UNCOMMON,
+            new ItemEnchantment(Enchantment.ARROW_FIRE, 1), "ARROW", 32));
+        RANGED_ITEMS.add(new CatalogItem("Yeet Bow", "BOW", Rarity.RARE,
+            new ItemEnchantment(Enchantment.ARROW_KNOCKBACK, 20), "ARROW", 3));
+        RANGED_ITEMS.add(new CatalogItem("The Better Bow", "BOW", Rarity.RARE,
+            new ItemEnchantment[]{
+                new ItemEnchantment(Enchantment.ARROW_DAMAGE, 15),
+                new ItemEnchantment(Enchantment.ARROW_INFINITE, 1)
         }, "ARROW", 1));
 
         // MISCELLANEOUS ITEMS

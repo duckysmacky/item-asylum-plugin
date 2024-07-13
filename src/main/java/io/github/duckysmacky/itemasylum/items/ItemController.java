@@ -1,5 +1,11 @@
 package io.github.duckysmacky.itemasylum.items;
 
+import io.github.duckysmacky.itemasylum.items.catalogs.ItemCatalog;
+import io.github.duckysmacky.itemasylum.items.catalogs.MeleeCatalog;
+import io.github.duckysmacky.itemasylum.items.catalogs.MiscellaneousCatalog;
+import io.github.duckysmacky.itemasylum.items.catalogs.RangedCatalog;
+import io.github.duckysmacky.itemasylum.items.item.CatalogItem;
+import io.github.duckysmacky.itemasylum.items.item.ItemEnchantment;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -10,30 +16,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ItemController {
-    public static final int MELEE_SLOT = 0;
-    public static final int RANGED_SLOT = 1;
-    public static final int MISCELLANEOUS_SLOT = 2;
-    public static final int MELEE_EXTRA_SLOT = 27;
-    public static final int RANGED_EXTRA_SLOT = 28;
-    public static final int MISCELLANEOUS_EXTRA_SLOT = 29;
+    private static final ItemCatalog[] CATALOGS = new ItemCatalog[]{
+      new MeleeCatalog(), new RangedCatalog(), new MiscellaneousCatalog()
+    };
 
-    // TODO - refactor
     public static void giveItems(Player player) {
-        PlayerInventory inv = player.getInventory();
-        inv.clear();
+        PlayerInventory inventory = player.getInventory();
+        inventory.clear();
 
-        CatalogItem meleeItem = ItemCatalog.getRandomItem(ItemCatalog.MELEE_ITEMS);
-        CatalogItem rangedItem = ItemCatalog.getRandomItem(ItemCatalog.RANGED_ITEMS);
-        CatalogItem miscellaneousItem = ItemCatalog.getRandomItem(ItemCatalog.MISCELLANEOUS_ITEMS);
-
-        inv.setItem(MELEE_SLOT, getItem(meleeItem));
-        if (meleeItem.getExtraItemId() != null) inv.setItem(MELEE_EXTRA_SLOT, getExtraItem(meleeItem));
-
-        inv.setItem(RANGED_SLOT, getItem(rangedItem));
-        if (rangedItem.getExtraItemId() != null) inv.setItem(RANGED_EXTRA_SLOT, getExtraItem(rangedItem));
-
-        inv.setItem(MISCELLANEOUS_SLOT, getItem(miscellaneousItem));
-        if (miscellaneousItem.getExtraItemId() != null) inv.setItem(MISCELLANEOUS_EXTRA_SLOT, getExtraItem(miscellaneousItem));
+        for (ItemCatalog catalog : CATALOGS) {
+            CatalogItem item = catalog.getRandomItem();
+            inventory.setItem(catalog.getSlot(), getItem(item));
+            if (item.getExtraItemId() != null)
+                inventory.setItem(catalog.getExtraSlot(), getExtraItem(item));
+        }
     }
 
     private static ItemStack getItem(CatalogItem itemData) {

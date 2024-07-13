@@ -1,4 +1,4 @@
-package io.github.duckysmacky.itemasylum.items;
+package io.github.duckysmacky.itemasylum.items.item;
 
 import org.bukkit.ChatColor;
 

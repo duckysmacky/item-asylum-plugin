@@ -38,6 +38,9 @@ public class ItemController {
 
         // lore
         List<String> itemLore = new ArrayList<>();
+        if (!itemData.getDescription().isEmpty())
+            itemLore.add(itemData.getDisplayDescription());
+
         itemLore.add(itemData.getDisplayRarity());
 
         // meta

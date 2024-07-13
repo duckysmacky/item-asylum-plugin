@@ -280,8 +280,12 @@ public class CatalogItem {
         return itemRarity;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
     public String getDisplayDescription() {
-        return ChatColor.translateAlternateColorCodes('&', description);
+        return ChatColor.WHITE + description;
     }
 
     public int getItemQuantity() {

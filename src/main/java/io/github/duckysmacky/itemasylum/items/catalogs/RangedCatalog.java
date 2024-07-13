@@ -7,17 +7,60 @@ import org.bukkit.enchantments.Enchantment;
 
 public final class RangedCatalog implements ItemCatalog {
     public final CatalogItem[] ITEMS = new CatalogItem[]{
-        new CatalogItem("Bow", "BOW", Rarity.COMMON, "ARROW", 32),
-        new CatalogItem("Fire Bow", "BOW", Rarity.UNCOMMON,
-            new ItemEnchantment(Enchantment.ARROW_FIRE, 1), "ARROW", 32),
-        new CatalogItem("Yeet Bow", "BOW", Rarity.RARE,
-            new ItemEnchantment(Enchantment.ARROW_KNOCKBACK, 20), "ARROW", 3),
-        new CatalogItem("The Better Bow", "BOW", Rarity.RARE,
-            new ItemEnchantment[]{
-                new ItemEnchantment(Enchantment.ARROW_DAMAGE, 15),
-                new ItemEnchantment(Enchantment.ARROW_INFINITE, 1)
-            },
-        "ARROW", 1)
+        new CatalogItem("Bow", "BOW", Rarity.COMMON,
+            "ARROW", 64),
+
+        new CatalogItem("Iron Bow", "MOREBOWS_IRON_BOW", Rarity.COMMON,
+            "ARROW", 64),
+
+        new CatalogItem("Egg", "EGG", 64, Rarity.COMMON, "egg"),
+
+        new CatalogItem("Fire Wand", "AGEOFWEAPONS_WAND_NETHER", Rarity.COMMON),
+
+        new CatalogItem("Fishing Rod", "FISHING_ROD", Rarity.COMMON),
+
+        new CatalogItem("Fast Bow", "MOREBOWS_DIAMOND_BOW", Rarity.UNCOMMON,
+            "ARROW", 32),
+
+        new CatalogItem("Shadow Bow", "MOREBOWS_ENDER_BOW", Rarity.UNCOMMON,
+            "ARROW", 32),
+
+        new CatalogItem("Fire Bow", "MOREBOWS_FLAME_BOW", Rarity.UNCOMMON,
+            "ARROW", 32),
+
+        new CatalogItem("Double Bow", "MOREBOWS_MULTI_BOW", Rarity.UNCOMMON,
+            "ARROW", 32),
+
+        new CatalogItem("Yeeter 3000", "BOW", Rarity.RARE,
+            new ItemEnchantment(Enchantment.ARROW_KNOCKBACK, 20),
+            "ARROW", 32),
+
+        new CatalogItem("Golden Bow", "MOREBOWS_GOLD_BOW", Rarity.RARE,
+            "ARROW", 32),
+
+        new CatalogItem("Ender Bow", "TWILIGHTFOREST_ENDER_BOW", Rarity.RARE,
+            "ARROW", 32),
+
+        new CatalogItem("Seeker Bow", "TWILIGHTFOREST_SEEKER_BOW", Rarity.RARE,
+            "ARROW", 32),
+
+        new CatalogItem("Triple Bow", "TWILIGHTFOREST_TRIPLE_BOW", Rarity.RARE,
+            "ARROW", 32),
+
+        new CatalogItem("Frost Bow", "TWILIGHTFOREST_ICE_BOW", Rarity.EPIC,
+            "ARROW", 16),
+
+        new CatalogItem("Flamethrower", "AGEOFWEAPONS_FLAME_THROWER", Rarity.EPIC),
+
+        new CatalogItem("Poisonthrower", "AGEOFWEAPONS_POISON_THROWER", Rarity.EPIC),
+
+        new CatalogItem("Scepter of Twilight", "TWILIGHTFOREST_TWILIGHT_SCEPTER", Rarity.EPIC),
+
+        new CatalogItem("Wand of Life Drain", "TWILIGHTFOREST_LIFEDRAIN_SCEPTER", Rarity.EPIC),
+
+        new CatalogItem("Zombie Wand", "TWILIGHTFOREST_ZOMBIE_SCEPTER", Rarity.LEGENDARY),
+
+        new CatalogItem("Portal Gun", "PORTALGUN_ITEM_PORTALGUN", Rarity.LEGENDARY)
     };
 
     @Override

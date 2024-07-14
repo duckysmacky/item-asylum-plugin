@@ -11,14 +11,14 @@ public enum Rarity {
     EPIC(ChatColor.DARK_PURPLE, 0.85),
     LEGENDARY(ChatColor.GOLD, 0.65),
     MYTHIC(ChatColor.DARK_RED, 0.45),
-    SECRET(ChatColor.DARK_GRAY, 0.10);
+    SECRET(ChatColor.BLACK, 0.10);
 
     private final String accentColor;
     private final int weight;
 
     Rarity(ChatColor rarityColor, double weightModifier) {
         this.accentColor = rarityColor + "" + ChatColor.BOLD;
-        this.weight = 1;
+        this.weight = (int) (10 * weightModifier);
     }
 
     public String getAccentColor() {

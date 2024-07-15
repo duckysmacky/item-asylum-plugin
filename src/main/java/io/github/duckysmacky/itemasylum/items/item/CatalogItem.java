@@ -149,6 +149,16 @@ public class CatalogItem {
         this.extraItemQuantity = extraItemQuantity;
     }
 
+    // base + extra + quantity
+    public CatalogItem(String itemName, String itemId, int itemQuantity, Rarity itemRarity, String extraItemId, int extraItemQuantity) {
+        this.itemName = itemName;
+        this.itemId = itemId;
+        this.itemQuantity = itemQuantity;
+        this.itemRarity = itemRarity;
+        this.extraItemId = extraItemId;
+        this.extraItemQuantity = extraItemQuantity;
+    }
+
     // base + enchantment + extra
     public CatalogItem(String itemName, String itemId, Rarity itemRarity, ItemEnchantment itemEnchantment, String extraItemId, int extraItemQuantity) {
         this.itemName = itemName;
@@ -285,7 +295,7 @@ public class CatalogItem {
     }
 
     public String getDisplayDescription() {
-        return ChatColor.WHITE + description;
+        return ChatColor.GRAY + description;
     }
 
     public int getItemQuantity() {

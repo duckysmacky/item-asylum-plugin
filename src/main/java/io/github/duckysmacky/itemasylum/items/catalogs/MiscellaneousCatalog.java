@@ -38,7 +38,15 @@ public final class MiscellaneousCatalog implements ItemCatalog {
 
         new CatalogItem("Anti-Personell Ming", "HBM_MINE_AP", 8, Rarity.UNCOMMON),
 
-        new CatalogItem("Sharpnel Mine", "HBM_MINE_SHARP", 8, Rarity.UNCOMMON),
+        new CatalogItem("Shrapnel Mine", "HBM_MINE_SHRAP", 8, Rarity.UNCOMMON),
+
+//        new CatalogItem("Path Staff", "MYSTICSTAFFS_PATH_STAFF", Rarity.UNCOMMON),
+
+//        new CatalogItem("Glow Staff", "MYSTICSTAFFS_GLOW_STAFF", Rarity.UNCOMMON),
+
+//        new CatalogItem("Invisibility Staff", "MYSTICSTAFFS_INVISIBILITY_STAFF", Rarity.UNCOMMON),
+
+//        new CatalogItem("Heal Staff", "MYSTICSTAFFS_HEAL_STAFF", Rarity.UNCOMMON),
 
         new CatalogItem("Stealth Device", "HBM_STEALTH_BOY", 3, Rarity.RARE),
 
@@ -57,12 +65,18 @@ public final class MiscellaneousCatalog implements ItemCatalog {
         new CatalogItem("Reverse TNT", "STUPIDTHINGS_REVERSE_TNT", 16, Rarity.RARE,
             "FLINT_AND_STEEL", 1),
 
-        new CatalogItem("Supply Drop Requester", "HBM_CRATE_CALLER", 3, Rarity.RARE,
+        new CatalogItem("Supply Drop Requester", "HBM_CRATE_CALLER", Rarity.RARE,
             "HBM_CROWBAR", 1),
 
         new CatalogItem("Totem of Undying", "TOTEM", Rarity.RARE),
 
+        new CatalogItem("Self yeeter", "FM_SELF_THRUST_CHARGE", Rarity.RARE),
+
         new CatalogItem("Watery Taint Injection", "HBM_SYRINGE_TAINT", Rarity.RARE),
+
+//        new CatalogItem("Wind Staff", "MYSTICSTAFFS_WIND_STAFF", Rarity.RARE),
+
+        new CatalogItem("Bees", "ICEANDFIRE_MYRMEX_JUNGLE_SWARM", Rarity.EPIC),
 
         new CatalogItem("Airstrike", "HBM_BOMB_CALLER", 5, Rarity.EPIC),
 
@@ -78,11 +92,17 @@ public final class MiscellaneousCatalog implements ItemCatalog {
 
         new CatalogItem("Elytra", "ELYTRA", Rarity.EPIC),
 
-        new CatalogItem("Propeller Hat", "STUPIDTHIGS_PROPELLER_HAT", Rarity.EPIC),
+        new CatalogItem("Propeller Hat", "STUPIDTHINGS_PROPELLER_HAT", Rarity.EPIC),
 
         new CatalogItem("Chemical X", "MUTANTBEASTS_CHEMICAL_X", Rarity.EPIC),
 
-        new CatalogItem("Turtle", "STUPIDTHIGS_MINE_TURTLE", Rarity.EPIC, "step on it and find out"),
+        new CatalogItem("Sun's Blessing", "MOWZIESMOBS_GRANT_SUNS_BLESSING", Rarity.EPIC),
+
+        new CatalogItem("Cloud Staff", "AETHER_LEGACY_CLOUD_STAFF", Rarity.EPIC),
+
+        new CatalogItem("Turtle", "STUPIDTHINGS_MINE_TURTLE", Rarity.EPIC, "step on it and find out"),
+
+        new CatalogItem("Anvil Backpack", "STUPIDTHINGS_ANVIL_BACKPACK", Rarity.LEGENDARY),
 
         new CatalogItem("Fabulous Vodka", "HBM_CANTEEN_FAB", Rarity.LEGENDARY),
 
@@ -108,11 +128,11 @@ public final class MiscellaneousCatalog implements ItemCatalog {
 
         new CatalogItem("Chocolate Milk", "HBM_CHOCOLATE_MILK", Rarity.MYTHIC),
 
-        new CatalogItem("Hunter Chopper", "HBM_CHOPPER", Rarity.MYTHIC),
+//        new CatalogItem("Hunter Chopper", "HBM_CHOPPER", Rarity.MYTHIC),
 
         new CatalogItem("Glitch", "HBM_GLITCH", Rarity.MYTHIC),
 
-//        new CatalogItem("Rod of Discord", "HBM_ROD_OF_DISCORD", Rarity.MYTHIC),
+        new CatalogItem("Rod of Discord", "HBM_ROD_OF_DISCORD", Rarity.MYTHIC),
 
         new CatalogItem("Pufferfish on a Stick", "AGEOFWEAPONS_PUFFERFISH_STICK", Rarity.SECRET, "ngl guys this is too op"),
 

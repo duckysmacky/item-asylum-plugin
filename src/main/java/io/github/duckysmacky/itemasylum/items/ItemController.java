@@ -20,6 +20,8 @@ public class ItemController {
         PlayerInventory inventory = player.getInventory();
         inventory.clear();
 
+        inventory.setItem(3, new ItemStack(Material.COOKED_BEEF, 64));
+
         for (ItemCatalog catalog : ItemCatalog.CATALOGS) {
             CatalogItem item = catalog.getRandomItem();
             inventory.setItem(catalog.getSlot(), getItem(item));

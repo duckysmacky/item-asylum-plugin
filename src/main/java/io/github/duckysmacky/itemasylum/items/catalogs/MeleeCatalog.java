@@ -21,6 +21,8 @@ public final class MeleeCatalog implements ItemCatalog {
 
         new CatalogItem("Fire Axe", "EXTRAUTILS2_FIREAXE", Rarity.COMMON, "Doesn't actually set enemies on fire"),
 
+        new CatalogItem("Spear", "MOWZIESMOBS_SPEAR", Rarity.UNCOMMON),
+
         new CatalogItem("Riot Shield", "TECHGUNS_RIOT_SHIELD", Rarity.UNCOMMON),
 
         new CatalogItem("Market Gardener", "HBM_MEMESPOON", Rarity.UNCOMMON),
@@ -49,6 +51,10 @@ public final class MeleeCatalog implements ItemCatalog {
         new CatalogItem("Spy Dagger", "AGEOFWEAPONS_DAGGER_IRON", Rarity.RARE, "the spy from tf2",
             new ItemEnchantment(Enchantment.DAMAGE_ALL, 10)),
 
+        new CatalogItem("Ice Crystal", "MOWZIESMOBS_ICE_CRYSTAL", Rarity.RARE),
+
+        new CatalogItem("Axe of a Thousand Metals", "MOWZIESMOBS_WROUGHT_AXE", Rarity.RARE),
+
         new CatalogItem("The Banisher", "AGEOFWEAPONS_FANTASY_SWORD_IRON", Rarity.EPIC,
             new ItemEnchantment[]{
                 new ItemEnchantment(Enchantment.DAMAGE_ALL, 7),
@@ -75,6 +81,22 @@ public final class MeleeCatalog implements ItemCatalog {
 
         new CatalogItem("Zombie Wand", "TWILIGHTFOREST_ZOMBIE_SCEPTER", Rarity.EPIC),
 
+        new CatalogItem("Tide Trident", "ICEANDFIRE_TIDE_TRIDENT", Rarity.EPIC),
+
+        new CatalogItem("Fire Dragonsteel Sword", "ICEANDFIRE_DRAGONSTEEL_FIRE_SWORD", Rarity.EPIC),
+
+        new CatalogItem("Flyswatter", "ICEANDFIRE_AMPHITHERE_MACUAHUITL", Rarity.EPIC),
+
+        new CatalogItem("Lightning Sword", "AETHER_LEGACY_LIGHTNING_SWORD", Rarity.EPIC),
+
+        new CatalogItem("Hammer of Notch", "AETHER_LEGACY_NOTCH_HAMMER", Rarity.LEGENDARY),
+
+        new CatalogItem("Lightning Knife", "AETHER_LEGACY_LIGHTNING_KNIFE", Rarity.LEGENDARY),
+
+        new CatalogItem("The Licker", "ICEANDFIRE_DEATHWORM_GAUNTLET_RED", Rarity.LEGENDARY),
+
+        new CatalogItem("W A L L", "ICEANDFIRE_TROLL_WEAPON.COLUMN", Rarity.LEGENDARY),
+
         new CatalogItem("Gravity Gun", "GRAVITYGUN_GRAVITYGUN", Rarity.LEGENDARY),
 
         new CatalogItem("Ullapool Caber", "HBM_ULLAPOOL_CABER", Rarity.LEGENDARY),
@@ -89,12 +111,12 @@ public final class MeleeCatalog implements ItemCatalog {
 
         new CatalogItem("Ultrahard Steel Sword", "HBM_HS_SWORD", Rarity.LEGENDARY, "SASAGEYO"),
 
-        new CatalogItem("CRUCIBLE", "HBM_CRUCIBLE", Rarity.MYTHIC),
+//        new CatalogItem("CRUCIBLE", "HBM_CRUCIBLE", Rarity.MYTHIC),
 
         new CatalogItem("Nuh uh", "STICK", Rarity.MYTHIC,
             new ItemEnchantment(Enchantment.KNOCKBACK, 255)),
 
-        new CatalogItem("The Ban Hammer", "HBM_MESE_GAVEL", Rarity.MYTHIC, (short) 3),
+        new CatalogItem("The Ban Hammer", "HBM_MESE_GAVEL", Rarity.MYTHIC),
 
         new CatalogItem("Brick", "CLAY_BRICK", Rarity.SECRET, "bonk",
             new ItemEnchantment(Enchantment.DAMAGE_ALL, 255)),

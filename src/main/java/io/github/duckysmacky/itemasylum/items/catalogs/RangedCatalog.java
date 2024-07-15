@@ -63,7 +63,7 @@ public final class RangedCatalog implements ItemCatalog {
             "ARROW", 16),
 
         new CatalogItem("Cryolator", "HBM_GUN_CRYOLATOR", Rarity.RARE,
-            "HBM_CLIP_CRYOLATOR_AMMO", 32),
+            "HBM_GUN_CRYOLATOR_AMMO", 32),
 
         new CatalogItem("Grenade Pistol", "HBM_GUN_HK69", Rarity.RARE,
             "HBM_AMMO_GRENADE_TOXIC", 8),
@@ -89,6 +89,14 @@ public final class RangedCatalog implements ItemCatalog {
         new CatalogItem("Frost Bow", "TWILIGHTFOREST_ICE_BOW", Rarity.RARE,
             "ARROW", 16),
 
+//        new CatalogItem("Fire Staff", "MYSTICSTAFFS_FIRE_STAFF", Rarity.RARE),
+
+//        new CatalogItem("Ice Ball Staff", "MYSTICSTAFFS_ICE_BALL_STAFF", Rarity.RARE),
+
+//        new CatalogItem("Sunstrike Staff", "MYSTICSTAFFS_SUNSTRIKE_STAFF", Rarity.EPIC),
+
+//        new CatalogItem("Solar Beam Staff", "MYSTICSTAFFS_SOLAR_BEAM_STAFF", Rarity.EPIC),
+
         new CatalogItem("Jar of Cloud", "HBM_GRENADE_CLOUD", Rarity.EPIC),
 
         new CatalogItem("Jar of Pink Cloud", "HBM_GRENADE_PINK_CLOUD", Rarity.EPIC),
@@ -98,7 +106,7 @@ public final class RangedCatalog implements ItemCatalog {
         new CatalogItem("Dream Bolt-Action Rifle", "HBM_GUN_BOLT_ACTION", Rarity.EPIC,
             "HBM_AMMO_20GAUGE_SLUG", 12),
 
-        new CatalogItem("Spirit Seeker", "CYCLICMAGIC_WANT_MISSILE", Rarity.RARE),
+        new CatalogItem("Spirit Seeker", "CYCLICMAGIC_WAND_MISSILE", Rarity.RARE),
 
         new CatalogItem("Scepter of Twilight", "TWILIGHTFOREST_TWILIGHT_SCEPTER", Rarity.RARE),
 
@@ -119,7 +127,9 @@ public final class RangedCatalog implements ItemCatalog {
         new CatalogItem("EMP Gun", "HBM_GUN_EMP", Rarity.EPIC,
             "HBM_GUN_EMP_AMMO", 4),
 
-        new CatalogItem("Portal Gun", "PORTALGUN_ITEM_PORTALGUN", Rarity.LEGENDARY),
+        new CatalogItem("Pocket Sand", "STUPIDTHINGS_POCKET_SAND", Rarity.LEGENDARY, "Shwaz's favourite weapon"),
+
+//        new CatalogItem("Portal Gun", "PORTALGUN_ITEM_PORTALGUN", Rarity.LEGENDARY),
 
         new CatalogItem("Lemon", "HBM_GRENADE_LEMON", 8, Rarity.LEGENDARY),
 

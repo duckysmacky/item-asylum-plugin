@@ -14,7 +14,7 @@ commands:
       - r
   game:
     description: Main command for controlling "Item Asylum" game
-    usage: /<command> <arguments>...
+    usage: /<command>
     aliases:
       - g
   catalog:

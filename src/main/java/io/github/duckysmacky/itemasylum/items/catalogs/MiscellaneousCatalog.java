@@ -2,7 +2,6 @@ package io.github.duckysmacky.itemasylum.items.catalogs;
 
 import io.github.duckysmacky.itemasylum.items.item.CatalogItem;
 import io.github.duckysmacky.itemasylum.items.item.Rarity;
-import org.bukkit.inventory.ItemStack;
 
 public final class MiscellaneousCatalog implements ItemCatalog {
     public final CatalogItem[] ITEMS = new CatalogItem[]{
@@ -35,9 +34,11 @@ public final class MiscellaneousCatalog implements ItemCatalog {
 
         new CatalogItem("Speed Charm", "CYCLICMAGIC_CHARM_SPEED", Rarity.UNCOMMON),
 
-        new CatalogItem("I am your friend now", "CYCLICMAGIC_TOOL_MOUNT", Rarity.RARE),
+        new CatalogItem("I am your friend now", "CYCLICMAGIC_TOOL_MOUNT", Rarity.UNCOMMON),
 
-        new CatalogItem("Stealth Device", "HBM_STEALTH_BOY", Rarity.RARE),
+        new CatalogItem("Rod of Elevation", "CYCLICMAGIC_TOOL_ELEVATE", Rarity.UNCOMMON),
+
+        new CatalogItem("Stealth Device", "HBM_STEALTH_BOY", 3, Rarity.RARE),
 
         new CatalogItem("Super Stimpak", "HBM_SYRINGE_METAL_SUPER", 8, Rarity.RARE),
 
@@ -50,8 +51,6 @@ public final class MiscellaneousCatalog implements ItemCatalog {
         new CatalogItem("Medical Bag", "HBM_MED_BAG", 5, Rarity.RARE),
 
         new CatalogItem("Climbing Gloves", "CYCLICMAGIC_GLOVE_CLIMB", Rarity.RARE),
-
-        new CatalogItem("Rod of Elevation", "CYCLICMAGIC_TOOL_ELEVATE", Rarity.RARE),
 
         new CatalogItem("Reverse TNT", "STUPIDTHINGS_REVERSE_TNT", Rarity.RARE,
             "FLINT_AND_STEEL", 1),
@@ -100,11 +99,6 @@ public final class MiscellaneousCatalog implements ItemCatalog {
     };
 
     @Override
-    public CatalogItem getRandomItem() {
-        return ItemCatalog.getRandomItemFromList(ITEMS);
-    }
-
-    @Override
     public int getSlot() {
         return 2;
     }
@@ -112,5 +106,15 @@ public final class MiscellaneousCatalog implements ItemCatalog {
     @Override
     public int getExtraSlot() {
         return 29;
+    }
+
+    @Override
+    public CatalogItem getRandomItem() {
+        return ItemCatalog.getRandomItemFromList(ITEMS);
+    }
+
+    @Override
+    public CatalogItem[] getCatalog() {
+        return ITEMS;
     }
 }

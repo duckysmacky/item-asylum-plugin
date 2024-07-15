@@ -85,11 +85,6 @@ public final class RangedCatalog implements ItemCatalog {
     };
 
     @Override
-    public CatalogItem getRandomItem() {
-        return ItemCatalog.getRandomItemFromList(ITEMS);
-    }
-
-    @Override
     public int getSlot() {
         return 1;
     }
@@ -97,5 +92,15 @@ public final class RangedCatalog implements ItemCatalog {
     @Override
     public int getExtraSlot() {
         return 28;
+    }
+
+    @Override
+    public CatalogItem getRandomItem() {
+        return ItemCatalog.getRandomItemFromList(ITEMS);
+    }
+
+    @Override
+    public CatalogItem[] getCatalog() {
+        return ITEMS;
     }
 }

@@ -5,6 +5,10 @@ import io.github.duckysmacky.itemasylum.items.item.CatalogItem;
 import java.util.Random;
 
 public interface ItemCatalog {
+    ItemCatalog[] CATALOGS = new ItemCatalog[]{
+        new MeleeCatalog(), new RangedCatalog(), new MiscellaneousCatalog()
+    };
+
     // TODO - refactor to faster solution O(n^2) -> O(n)
     static CatalogItem getRandomItemFromList(CatalogItem[] itemList) {
         Random random = new Random();
@@ -21,4 +25,5 @@ public interface ItemCatalog {
     int getSlot();
     int getExtraSlot();
     CatalogItem getRandomItem();
+    CatalogItem[] getCatalog();
 }

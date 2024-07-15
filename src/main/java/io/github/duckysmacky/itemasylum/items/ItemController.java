@@ -16,15 +16,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ItemController {
-    private static final ItemCatalog[] CATALOGS = new ItemCatalog[]{
-      new MeleeCatalog(), new RangedCatalog(), new MiscellaneousCatalog()
-    };
-
     public static void giveItems(Player player) {
         PlayerInventory inventory = player.getInventory();
         inventory.clear();
 
-        for (ItemCatalog catalog : CATALOGS) {
+        for (ItemCatalog catalog : ItemCatalog.CATALOGS) {
             CatalogItem item = catalog.getRandomItem();
             inventory.setItem(catalog.getSlot(), getItem(item));
             if (item.getExtraItemId() != null)

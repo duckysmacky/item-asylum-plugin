@@ -3,9 +3,7 @@ package io.github.duckysmacky.itemasylum.items.catalogs;
 import io.github.duckysmacky.itemasylum.items.item.CatalogItem;
 import io.github.duckysmacky.itemasylum.items.item.ItemEnchantment;
 import io.github.duckysmacky.itemasylum.items.item.Rarity;
-import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
-import org.bukkit.inventory.ItemStack;
 
 public final class MeleeCatalog implements ItemCatalog {
     private final CatalogItem[] ITEMS = new CatalogItem[]{
@@ -27,6 +25,8 @@ public final class MeleeCatalog implements ItemCatalog {
 
         new CatalogItem("Market Gardener", "HBM_MEMESPOON", Rarity.UNCOMMON),
 
+        new CatalogItem("Claymore", "AGEOFWEAPONS_LONG_CLAYMORE_DIAMOND", Rarity.UNCOMMON, "watch the flank"),
+
         new CatalogItem("Power Stick", "STICK", Rarity.UNCOMMON,
             new ItemEnchantment(Enchantment.KNOCKBACK, 20)),
 
@@ -44,9 +44,10 @@ public final class MeleeCatalog implements ItemCatalog {
 
         new CatalogItem("Chainsaw", "HBM_CHAINSAW", Rarity.RARE),
 
-        new CatalogItem("Claymore", "AGEOFWEAPONS_LONG_CLAYMORE_DIAMOND", Rarity.COMMON),
-
         new CatalogItem("Blade on a Wrench", "HBM_WRENCH_FLIPPED", Rarity.RARE),
+
+        new CatalogItem("Spy Dagger", "AGEOFWEAPONS_DAGGER_IRON", Rarity.RARE, "the spy from tf2",
+            new ItemEnchantment(Enchantment.DAMAGE_ALL, 10)),
 
         new CatalogItem("The Banisher", "AGEOFWEAPONS_FANTASY_SWORD_IRON", Rarity.EPIC,
             new ItemEnchantment[]{
@@ -56,9 +57,6 @@ public final class MeleeCatalog implements ItemCatalog {
 
         new CatalogItem("HAMMAH", "AGEOFWEAPONS_WAR_HAMMER_DIAMOND", Rarity.EPIC,
             new ItemEnchantment(Enchantment.DAMAGE_ALL, 5)),
-
-        new CatalogItem("Spy Dagger", "AGEOFWEAPONS_DAGGER_IRON", Rarity.RARE, "the spy from tf2",
-                new ItemEnchantment(Enchantment.DAMAGE_ALL, 10)),
 
 //        new CatalogItem("Yamato", "FLAMMPFEIL.SLASHBLADE:SLASHBLADE", Rarity.EPIC), FIXME
 
@@ -97,11 +95,6 @@ public final class MeleeCatalog implements ItemCatalog {
     };
 
     @Override
-    public CatalogItem getRandomItem() {
-        return ItemCatalog.getRandomItemFromList(ITEMS);
-    }
-
-    @Override
     public int getSlot() {
         return 0;
     }
@@ -109,5 +102,15 @@ public final class MeleeCatalog implements ItemCatalog {
     @Override
     public int getExtraSlot() {
         return 27;
+    }
+
+    @Override
+    public CatalogItem getRandomItem() {
+        return ItemCatalog.getRandomItemFromList(ITEMS);
+    }
+
+    @Override
+    public CatalogItem[] getCatalog() {
+        return ITEMS;
     }
 }

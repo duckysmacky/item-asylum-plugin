@@ -1,6 +1,6 @@
 package io.github.duckysmacky.itemasylum.game;
 
-public enum GameState {
+public enum GameStatus {
     IDLE,
     IN_PROGRESS
 }

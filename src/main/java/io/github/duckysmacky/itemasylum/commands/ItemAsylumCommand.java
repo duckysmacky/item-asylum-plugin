@@ -18,7 +18,9 @@ public class ItemAsylumCommand implements CommandExecutor {
         player.sendMessage("Help information is work in progress. Deal with this ugly mess for now");
         player.sendMessage("GAME");
         player.sendMessage("/game <start/stop> - start/stop the game");
+        player.sendMessage("/game setup - setup game");
         player.sendMessage("/game mode <mode> - choose game mode");
+        player.sendMessage("/game goal <goal> - choose game goal (kills/deaths)");
         player.sendMessage("/game status - get game status");
         player.sendMessage("REROLL");
         player.sendMessage("/reroll - reroll current items");

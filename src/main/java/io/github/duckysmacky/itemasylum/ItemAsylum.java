@@ -11,14 +11,14 @@ import io.github.duckysmacky.itemasylum.listeners.RespawnListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class ItemAsylum extends JavaPlugin {
+    public static final GameController GAME_CONTROLLER = new GameController();
+
     @Override
     public void onEnable() {
         System.out.println("Item Asylum Plugin is starting up...");
 
-        GameController.GAME_STATUS = GameStatus.IDLE;
-        GameController.GAME_MODE = GameMode.CLASSIC;
-
         getServer().getPluginManager().registerEvents(new RespawnListener(), this);
+        GAME_CONTROLLER.setupGame();
 
         getCommand("itemasylum").setExecutor(new ItemAsylumCommand());
         getCommand("reroll").setExecutor(new RerollCommand());

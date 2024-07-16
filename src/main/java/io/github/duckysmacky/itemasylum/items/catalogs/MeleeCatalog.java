@@ -23,7 +23,7 @@ public final class MeleeCatalog implements ItemCatalog {
 
         new CatalogItem("Spear", "MOWZIESMOBS_SPEAR", Rarity.UNCOMMON),
 
-        new CatalogItem("Riot Shield", "TECHGUNS_RIOT_SHIELD", Rarity.UNCOMMON),
+//        new CatalogItem("Riot Shield", "TECHGUNS_RIOT_SHIELD", Rarity.UNCOMMON), NOTE: MOD REMOVED
 
         new CatalogItem("Market Gardener", "HBM_MEMESPOON", Rarity.UNCOMMON),
 
@@ -38,11 +38,13 @@ public final class MeleeCatalog implements ItemCatalog {
 
         new CatalogItem("Pipe Wrench", "HBM_WRENCH", Rarity.UNCOMMON),
 
-        new CatalogItem("Fire Sword", "TWILIGHTFOREST_FIERY_SWORD", Rarity.RARE),
+        new CatalogItem("Fire Sword", "TWILIGHTFOREST_FIERY_SWORD", Rarity.UNCOMMON),
 
-        new CatalogItem("Ice Sword", "TWILIGHTFOREST_ICE_SWORD", Rarity.RARE),
+        new CatalogItem("Ice Sword", "TWILIGHTFOREST_ICE_SWORD", Rarity.UNCOMMON),
 
-        new CatalogItem("Stunstick", "HBM_ELEC_SWORD", Rarity.RARE),
+        new CatalogItem("Stunstick", "HBM_ELEC_SWORD", Rarity.UNCOMMON),
+
+        new CatalogItem("Balefire and Steel", "HBM_BALEFIRE_AND_STEEL", Rarity.UNCOMMON),
 
         new CatalogItem("Chainsaw", "HBM_CHAINSAW", Rarity.RARE),
 
@@ -55,11 +57,21 @@ public final class MeleeCatalog implements ItemCatalog {
 
         new CatalogItem("Axe of a Thousand Metals", "MOWZIESMOBS_WROUGHT_AXE", Rarity.RARE),
 
-        new CatalogItem("The Banisher", "AGEOFWEAPONS_FANTASY_SWORD_IRON", Rarity.EPIC,
+        new CatalogItem("The Banisher", "AGEOFWEAPONS_FANTASY_SWORD_IRON", Rarity.RARE,
             new ItemEnchantment[]{
                 new ItemEnchantment(Enchantment.DAMAGE_ALL, 7),
                 new ItemEnchantment(Enchantment.FIRE_ASPECT, 2),
             }),
+
+        new CatalogItem("Double Battle Axes", "AGEOFWEAPONS_BATTLE_AXE_IRON", 2, Rarity.RARE,
+            "Put the other one in the other hand and be cool asf"),
+
+        new CatalogItem("Flyswatter", "ICEANDFIRE_AMPHITHERE_MACUAHUITL", Rarity.RARE),
+
+        new CatalogItem("Lightsaber", "FM_LASER_SWORD", Rarity.RARE,
+            new ItemEnchantment(Enchantment.DAMAGE_ALL, 10)),
+
+        new CatalogItem("Vampiric Blade", "AETHER_LEGACY_VAMPIRE_BLADE", Rarity.EPIC),
 
         new CatalogItem("HAMMAH", "AGEOFWEAPONS_WAR_HAMMER_DIAMOND", Rarity.EPIC,
             new ItemEnchantment(Enchantment.DAMAGE_ALL, 5)),
@@ -70,48 +82,55 @@ public final class MeleeCatalog implements ItemCatalog {
 
         new CatalogItem("Paradox Staff", "AGEOFWEAPONS_PARADOX_STAFF", Rarity.EPIC),
 
-        new CatalogItem("Balefire and Steel", "HBM_BALEFIRE_AND_STEEL", Rarity.EPIC),
+        new CatalogItem("Sledge's Sledge", "HBM_SHIMMER_SLEDGE", Rarity.EPIC, "From the hit game \"Rainbow Six Siege\""),
 
-        new CatalogItem("Sledge's Hammer", "HBM_SHIMMER_SLEDGE", Rarity.EPIC, "From the hit game \"Rainbow Six Siege\""),
-
-        new CatalogItem("Endersoul Hand", "MUTANTBEASTS_ENDERSOUL_HAND", Rarity.EPIC),
-
-        new CatalogItem("Double Battle Axes", "AGEOFWEAPONS_BATTLE_AXE_IRON", 2, Rarity.EPIC,
-            "Put the other one in the other hand and be cool asf"),
-
-        new CatalogItem("Zombie Wand", "TWILIGHTFOREST_ZOMBIE_SCEPTER", Rarity.EPIC),
+//        new CatalogItem("Endersoul Hand", "MUTANTBEASTS_ENDERSOUL_HAND", Rarity.EPIC), NOTE: MOD REMOVED
 
         new CatalogItem("Tide Trident", "ICEANDFIRE_TIDE_TRIDENT", Rarity.EPIC),
 
         new CatalogItem("Fire Dragonsteel Sword", "ICEANDFIRE_DRAGONSTEEL_FIRE_SWORD", Rarity.EPIC),
 
-        new CatalogItem("Flyswatter", "ICEANDFIRE_AMPHITHERE_MACUAHUITL", Rarity.EPIC),
-
         new CatalogItem("Lightning Sword", "AETHER_LEGACY_LIGHTNING_SWORD", Rarity.EPIC),
 
-        new CatalogItem("Hammer of Notch", "AETHER_LEGACY_NOTCH_HAMMER", Rarity.LEGENDARY),
+        new CatalogItem("Hammer of Notch", "AETHER_LEGACY_NOTCH_HAMMER", Rarity.EPIC),
 
-        new CatalogItem("Lightning Knife", "AETHER_LEGACY_LIGHTNING_KNIFE", Rarity.LEGENDARY),
+        new CatalogItem("Lightning Knife", "AETHER_LEGACY_LIGHTNING_KNIFE", Rarity.EPIC),
+
+        new CatalogItem("Gravity Sword", "AETHER_LEGACY_GRAVITITE_SWORD", Rarity.EPIC),
+
+        new CatalogItem("Soul Stealer", "FM_SOUL_STEALER", Rarity.EPIC),
+
+        new CatalogItem("Cactus Sword", "STUPIDTHINGS_CACTUS_SWORD", Rarity.EPIC,
+            new ItemEnchantment(Enchantment.DAMAGE_ALL, 3)),
+
+        new CatalogItem("The Stabber", "ICEANDFIRE_STYMPHALIAN_BIRD_DAGGER", Rarity.EPIC, "Average day in London"),
+
+        new CatalogItem("Pencil", "AETHER_LEGACY_VALKYRIE_LANCE", Rarity.LEGENDARY),
 
         new CatalogItem("The Licker", "ICEANDFIRE_DEATHWORM_GAUNTLET_RED", Rarity.LEGENDARY),
 
-        new CatalogItem("W A L L", "ICEANDFIRE_TROLL_WEAPON.COLUMN", Rarity.LEGENDARY),
+//        new CatalogItem("W A L L", "ICEANDFIRE_TROLL_WEAPON.COLUMN", Rarity.LEGENDARY), NOTE: BAD ITEM NAME
 
         new CatalogItem("Gravity Gun", "GRAVITYGUN_GRAVITYGUN", Rarity.LEGENDARY),
 
-        new CatalogItem("Ullapool Caber", "HBM_ULLAPOOL_CABER", Rarity.LEGENDARY),
+        new CatalogItem("عصا الانفجار", "HBM_ULLAPOOL_CABER", Rarity.LEGENDARY),
 
         new CatalogItem("Sans Bone", "AGEOFWEAPONS_CAVEMAN_KNIVE_BONE", Rarity.LEGENDARY,
             new ItemEnchantment(Enchantment.DAMAGE_ALL, 10)),
 
-        new CatalogItem("Cactus Sword", "STUPIDTHINGS_CACTUS_SWORD", Rarity.LEGENDARY,
-            new ItemEnchantment(Enchantment.DAMAGE_ALL, 3)),
-
         new CatalogItem("1000 Degree Knife", "MEMEINABOTTLE_HOT_KNIFE", Rarity.LEGENDARY),
+
+        new CatalogItem("Energy Blade", "FM_ENERGY_BLADE", Rarity.LEGENDARY),
+
+        new CatalogItem("Death's Scythe", "FM_DEATH_SCYTHE", Rarity.LEGENDARY),
 
         new CatalogItem("Ultrahard Steel Sword", "HBM_HS_SWORD", Rarity.LEGENDARY, "SASAGEYO"),
 
-//        new CatalogItem("CRUCIBLE", "HBM_CRUCIBLE", Rarity.MYTHIC),
+        new CatalogItem("Yamato", "HBM_HF_SWORD", Rarity.LEGENDARY, "It's not but this is the closest thing we got, sorry :("),
+
+//        new CatalogItem("CRUCIBLE", "HBM_CRUCIBLE", Rarity.MYTHIC), NOTE: DOESN'T WORK
+
+        new CatalogItem("Zombie Wand", "TWILIGHTFOREST_ZOMBIE_SCEPTER", Rarity.MYTHIC),
 
         new CatalogItem("Nuh uh", "STICK", Rarity.MYTHIC,
             new ItemEnchantment(Enchantment.KNOCKBACK, 255)),

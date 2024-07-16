@@ -34,19 +34,19 @@ public final class MiscellaneousCatalog implements ItemCatalog {
 
         new CatalogItem("Rod of Elevation", "CYCLICMAGIC_TOOL_ELEVATE", Rarity.UNCOMMON),
 
-        new CatalogItem("Flashbang", "CGM_STUN_GRENADE", 8, Rarity.UNCOMMON),
+//        new CatalogItem("Flashbang", "CGM_STUN_GRENADE", 8, Rarity.UNCOMMON), NOTE: MOD REMOVED
 
         new CatalogItem("Anti-Personell Ming", "HBM_MINE_AP", 8, Rarity.UNCOMMON),
 
         new CatalogItem("Shrapnel Mine", "HBM_MINE_SHRAP", 8, Rarity.UNCOMMON),
 
-//        new CatalogItem("Path Staff", "MYSTICSTAFFS_PATH_STAFF", Rarity.UNCOMMON),
+//        new CatalogItem("Path Staff", "MYSTICSTAFFS_PATH_STAFF", Rarity.UNCOMMON), NOTE: MOD DOESN'T WORK
 
-//        new CatalogItem("Glow Staff", "MYSTICSTAFFS_GLOW_STAFF", Rarity.UNCOMMON),
+//        new CatalogItem("Glow Staff", "MYSTICSTAFFS_GLOW_STAFF", Rarity.UNCOMMON), NOTE: MOD DOESN'T WORK
 
-//        new CatalogItem("Invisibility Staff", "MYSTICSTAFFS_INVISIBILITY_STAFF", Rarity.UNCOMMON),
+//        new CatalogItem("Invisibility Staff", "MYSTICSTAFFS_INVISIBILITY_STAFF", Rarity.UNCOMMON), NOTE: MOD DOESN'T WORK
 
-//        new CatalogItem("Heal Staff", "MYSTICSTAFFS_HEAL_STAFF", Rarity.UNCOMMON),
+//        new CatalogItem("Heal Staff", "MYSTICSTAFFS_HEAL_STAFF", Rarity.UNCOMMON), NOTE: MOD DOESN'T WORK
 
         new CatalogItem("Stealth Device", "HBM_STEALTH_BOY", 3, Rarity.RARE),
 
@@ -74,11 +74,18 @@ public final class MiscellaneousCatalog implements ItemCatalog {
 
         new CatalogItem("Watery Taint Injection", "HBM_SYRINGE_TAINT", Rarity.RARE),
 
-//        new CatalogItem("Wind Staff", "MYSTICSTAFFS_WIND_STAFF", Rarity.RARE),
+        new CatalogItem("Turtle", "STUPIDTHINGS_MINE_TURTLE", 8, Rarity.RARE, "step on it and find out"),
+
+
+//        new CatalogItem("Wind Staff", "MYSTICSTAFFS_WIND_STAFF", Rarity.RARE), NOTE: MOD DOESN'T WORK
+
+        new CatalogItem("Airstrike", "HBM_BOMB_CALLER", 5, Rarity.RARE),
+
+        new CatalogItem("Airstrike", "ROLEPLAYITEMS_COJINPEDORRO", Rarity.RARE),
+
+        new CatalogItem("Elytra", "ELYTRA", Rarity.RARE),
 
         new CatalogItem("Bees", "ICEANDFIRE_MYRMEX_JUNGLE_SWARM", Rarity.EPIC),
-
-        new CatalogItem("Airstrike", "HBM_BOMB_CALLER", 5, Rarity.EPIC),
 
         new CatalogItem("Player Launcher", "CYCLICMAGIC_TOOL_LAUNCHER", Rarity.EPIC),
 
@@ -90,21 +97,17 @@ public final class MiscellaneousCatalog implements ItemCatalog {
 
         new CatalogItem("Staff of Protection", "TWILIGHTFOREST_SHIELD_SCEPTER", Rarity.EPIC),
 
-        new CatalogItem("Elytra", "ELYTRA", Rarity.EPIC),
-
         new CatalogItem("Propeller Hat", "STUPIDTHINGS_PROPELLER_HAT", Rarity.EPIC),
 
-        new CatalogItem("Chemical X", "MUTANTBEASTS_CHEMICAL_X", Rarity.EPIC),
-
-        new CatalogItem("Sun's Blessing", "MOWZIESMOBS_GRANT_SUNS_BLESSING", Rarity.EPIC),
+//        new CatalogItem("Chemical X", "MUTANTBEASTS_CHEMICAL_X", Rarity.EPIC), NOTE: MOD REMOVED
 
         new CatalogItem("Cloud Staff", "AETHER_LEGACY_CLOUD_STAFF", Rarity.EPIC),
 
-        new CatalogItem("Turtle", "STUPIDTHINGS_MINE_TURTLE", Rarity.EPIC, "step on it and find out"),
+        new CatalogItem("Anvil Backpack", "STUPIDTHINGS_ANVIL_BACKPACK", Rarity.EPIC),
 
-        new CatalogItem("Anvil Backpack", "STUPIDTHINGS_ANVIL_BACKPACK", Rarity.LEGENDARY),
+        new CatalogItem("Sun Mask", "MOWZIESMOBS_BARAKO_MASK", Rarity.EPIC),
 
-        new CatalogItem("Fabulous Vodka", "HBM_CANTEEN_FAB", Rarity.LEGENDARY),
+        new CatalogItem("Водка", "HBM_CANTEEN_FAB", Rarity.LEGENDARY),
 
         new CatalogItem("AWESOME", "HBM_SYRINGE_AWESOME", Rarity.LEGENDARY),
 
@@ -120,15 +123,15 @@ public final class MiscellaneousCatalog implements ItemCatalog {
 
         new CatalogItem("T45 Armor Kit", "HBM_T45_KIT", Rarity.LEGENDARY),
 
-//        new CatalogItem("Flight Chorus", "CYCLICMAGIC_GLOWING_CHORUS", Rarity.MYTHIC),
+        new CatalogItem("Noclip Chorus", "CYCLICMAGIC_CORRUPTED_CHORUS", Rarity.LEGENDARY),
 
-        new CatalogItem("Noclip Chorus", "CYCLICMAGIC_CORRUPTED_CHORUS", Rarity.MYTHIC),
+        new CatalogItem("Cigarette", "ROLEPLAYITEMS_CIGARROSOSPECHOSO", Rarity.LEGENDARY),
+
+        new CatalogItem("Flight Chorus", "CYCLICMAGIC_GLOWING_CHORUS", Rarity.MYTHIC),
 
         new CatalogItem("Infinipearl", "CYCLICMAGIC_ENDER_PEARL_REUSE", Rarity.MYTHIC),
 
         new CatalogItem("Chocolate Milk", "HBM_CHOCOLATE_MILK", Rarity.MYTHIC),
-
-//        new CatalogItem("Hunter Chopper", "HBM_CHOPPER", Rarity.MYTHIC),
 
         new CatalogItem("Glitch", "HBM_GLITCH", Rarity.MYTHIC),
 

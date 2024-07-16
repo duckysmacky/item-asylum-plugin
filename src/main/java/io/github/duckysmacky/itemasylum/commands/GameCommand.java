@@ -58,9 +58,13 @@ public class GameCommand implements CommandExecutor {
                 GameController.GAME_MODE = GameMode.TEAMS;
                 ChatUtils.announce("Gamemode set to " + mode, ChatColor.GREEN);
                 return true;
+            case "kill_reroll":
+                GameController.GAME_MODE = GameMode.KILL_REROLL;
+                ChatUtils.announce("Gamemode set to " + mode, ChatColor.GREEN);
+                return true;
             default:
                 player.sendMessage(String.format(
-                    "%sGamemode \"%s\" doesn't exist!\n%sAll gamemodes: CLASSIC, RANDOM, KNOCKOUT, TEAMS",
+                    "%sGamemode \"%s\" doesn't exist!\n%sAll gamemodes: CLASSIC, RANDOM, KNOCKOUT, TEAMS, KILL_REROLL",
                     ChatColor.RED, mode, ChatColor.WHITE
                 ));
                 return true;

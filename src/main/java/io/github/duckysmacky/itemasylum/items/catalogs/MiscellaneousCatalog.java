@@ -109,8 +109,6 @@ public final class MiscellaneousCatalog implements ItemCatalog {
 
         new CatalogItem("Водка", "HBM_CANTEEN_FAB", Rarity.LEGENDARY),
 
-        new CatalogItem("AWESOME", "HBM_SYRINGE_AWESOME", Rarity.LEGENDARY),
-
         new CatalogItem("Carrypearl", "CYCLICMAGIC_ENDER_PEARL_MOUNTED", Rarity.LEGENDARY),
 
         new CatalogItem("You are my friend now", "CYCLICMAGIC_TOOL_MOUNT_INVERSE", Rarity.LEGENDARY),
@@ -127,7 +125,9 @@ public final class MiscellaneousCatalog implements ItemCatalog {
 
         new CatalogItem("Cigarette", "ROLEPLAYITEMS_CIGARROSOSPECHOSO", Rarity.LEGENDARY),
 
-        new CatalogItem("Flight Chorus", "CYCLICMAGIC_GLOWING_CHORUS", Rarity.MYTHIC),
+//        new CatalogItem("Flight Chorus", "CYCLICMAGIC_GLOWING_CHORUS", Rarity.MYTHIC),
+
+        new CatalogItem("AWESOME", "HBM_SYRINGE_AWESOME", Rarity.MYTHIC),
 
         new CatalogItem("Infinipearl", "CYCLICMAGIC_ENDER_PEARL_REUSE", Rarity.MYTHIC),
 

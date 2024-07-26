@@ -1,9 +1,8 @@
 package io.github.duckysmacky.itemasylum.items;
 
+import io.github.duckysmacky.itemasylum.ItemAsylum;
+import io.github.duckysmacky.itemasylum.game.GameMode;
 import io.github.duckysmacky.itemasylum.items.catalogs.ItemCatalog;
-import io.github.duckysmacky.itemasylum.items.catalogs.MeleeCatalog;
-import io.github.duckysmacky.itemasylum.items.catalogs.MiscellaneousCatalog;
-import io.github.duckysmacky.itemasylum.items.catalogs.RangedCatalog;
 import io.github.duckysmacky.itemasylum.items.item.CatalogItem;
 import io.github.duckysmacky.itemasylum.items.item.ItemEnchantment;
 import org.bukkit.Material;
@@ -14,19 +13,31 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class ItemController {
+
     public static void giveItems(Player player) {
-        PlayerInventory inventory = player.getInventory();
-        inventory.clear();
+        PlayerInventory inv = player.getInventory();
 
-        inventory.setItem(3, new ItemStack(Material.COOKED_BEEF, 64));
+        inv.clear();
+        inv.setItem(3, new ItemStack(Material.COOKED_BEEF, 64));
 
-        for (ItemCatalog catalog : ItemCatalog.CATALOGS) {
+        if (ItemAsylum.GAME_CONTROLLER.getGameMode() == GameMode.RANDOM) {
+            for (int i = 0; i < 3; i++) {
+                int rnd = new Random().nextInt(ItemCatalog.LIST.length);
+                ItemCatalog catalog = ItemCatalog.LIST[rnd];
+                CatalogItem item = catalog.getRandomItem();
+                inv.setItem(i, getItem(item));
+                if (item.getExtraItemId() != null) inv.setItem(i + 27, getExtraItem(item));
+            }
+            return;
+        }
+
+        for (ItemCatalog catalog : ItemCatalog.LIST) {
             CatalogItem item = catalog.getRandomItem();
-            inventory.setItem(catalog.getSlot(), getItem(item));
-            if (item.getExtraItemId() != null)
-                inventory.setItem(catalog.getExtraSlot(), getExtraItem(item));
+            inv.setItem(catalog.getSlot(), getItem(item));
+            if (item.getExtraItemId() != null) inv.setItem(catalog.getExtraSlot(), getExtraItem(item));
         }
     }
 

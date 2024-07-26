@@ -73,7 +73,7 @@ public final class MeleeCatalog implements ItemCatalog {
 
         new CatalogItem("Vampiric Blade", "AETHER_LEGACY_VAMPIRE_BLADE", Rarity.EPIC),
 
-        new CatalogItem("HAMMAH", "AGEOFWEAPONS_WAR_HAMMER_DIAMOND", Rarity.EPIC,
+        new CatalogItem("Big Hammer", "AGEOFWEAPONS_WAR_HAMMER_DIAMOND", Rarity.EPIC,
             new ItemEnchantment(Enchantment.DAMAGE_ALL, 5)),
 
         new CatalogItem("Evoker Fang", "CYCLICMAGIC_EVOKER_FANG", Rarity.EPIC),
@@ -81,8 +81,6 @@ public final class MeleeCatalog implements ItemCatalog {
         new CatalogItem("Wand of Life Drain", "TWILIGHTFOREST_LIFEDRAIN_SCEPTER", Rarity.EPIC),
 
         new CatalogItem("Paradox Staff", "AGEOFWEAPONS_PARADOX_STAFF", Rarity.EPIC),
-
-        new CatalogItem("Sledge's Sledge", "HBM_SHIMMER_SLEDGE", Rarity.EPIC, "From the hit game \"Rainbow Six Siege\""),
 
 //        new CatalogItem("Endersoul Hand", "MUTANTBEASTS_ENDERSOUL_HAND", Rarity.EPIC), NOTE: MOD REMOVED
 
@@ -106,6 +104,8 @@ public final class MeleeCatalog implements ItemCatalog {
         new CatalogItem("The Stabber", "ICEANDFIRE_STYMPHALIAN_BIRD_DAGGER", Rarity.EPIC, "Average day in London"),
 
         new CatalogItem("Pencil", "AETHER_LEGACY_VALKYRIE_LANCE", Rarity.LEGENDARY),
+
+        new CatalogItem("BONK", "HBM_SHIMMER_SLEDGE", Rarity.LEGENDARY),
 
         new CatalogItem("The Licker", "ICEANDFIRE_DEATHWORM_GAUNTLET_RED", Rarity.LEGENDARY),
 

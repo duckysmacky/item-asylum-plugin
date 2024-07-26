@@ -28,7 +28,7 @@ public class CatalogCommand implements CommandExecutor {
 
     private boolean getCatalogInfo(Player player) {
         HashMap<String, Integer> itemCount = new HashMap<>();
-        for (ItemCatalog catalog : ItemCatalog.CATALOGS) {
+        for (ItemCatalog catalog : ItemCatalog.LIST) {
             String catalogName = catalog.getClass().getName().toLowerCase().replace("catalog", "");
             itemCount.putIfAbsent("total", 0);
             itemCount.putIfAbsent(catalogName, 0);

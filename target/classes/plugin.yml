@@ -1,5 +1,5 @@
 name: ItemAsylum
-version: '0.1.0'
+version: '0.1.2'
 main: io.github.duckysmacky.itemasylum.ItemAsylum
 authors: [Ducky]
 description: An item asylum gamemode plugin for Minecraft
@@ -9,7 +9,7 @@ commands:
     usage: /<command>
   reroll:
     description: Reroll current items
-    usage: /<command>
+    usage: /<command> <player>
     aliases:
       - r
   game:

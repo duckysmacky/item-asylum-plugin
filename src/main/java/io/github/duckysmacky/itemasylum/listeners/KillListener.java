@@ -7,16 +7,16 @@ import io.github.duckysmacky.itemasylum.items.ItemController;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerRespawnEvent;
+import org.bukkit.event.entity.PlayerDeathEvent;
 
-public class RespawnListener implements Listener {
+public class KillListener implements Listener {
     @EventHandler
-    public void onPlayerRespawn(PlayerRespawnEvent event) {
+    public void onPlayerDeath(PlayerDeathEvent event) {
         if (ItemAsylum.GAME_CONTROLLER.getGameStatus() != GameStatus.IN_PROGRESS) return;
-        if (ItemAsylum.GAME_CONTROLLER.getGameMode() == GameMode.KILL_REROLL ||
-            ItemAsylum.GAME_CONTROLLER.getGameMode() == GameMode.NO_REROLL) return;
+        if (ItemAsylum.GAME_CONTROLLER.getGameMode() != GameMode.KILL_REROLL) return;
 
-        Player player = event.getPlayer();
-        ItemController.giveItems(player);
+        Player killer = event.getEntity().getKiller();
+
+        ItemController.giveItems(killer);
     }
 }

@@ -4,6 +4,7 @@ import io.github.duckysmacky.itemasylum.util.ChatUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.ConsoleCommandSender;
+import org.bukkit.entity.Player;
 
 public class GameController {
     private final ConsoleCommandSender console;
@@ -20,6 +21,7 @@ public class GameController {
 
     public void startGame() {
         gameStatus = GameStatus.IN_PROGRESS;
+        for (Player player : Bukkit.getServer().getOnlinePlayers()) Bukkit.dispatchCommand(console, "reroll " + player.getDisplayName());
         Bukkit.dispatchCommand(console, "scoreboard players set @a Deaths 0");
         Bukkit.dispatchCommand(console, "scoreboard players set @a Kills 0");
         ChatUtils.announce("GAME STARTED", ChatColor.GREEN);
@@ -33,11 +35,15 @@ public class GameController {
     public void setupGame() {
         Bukkit.dispatchCommand(console, "scoreboard objectives add Deaths deathCount");
         Bukkit.dispatchCommand(console, "scoreboard objectives add Kills playerKillCount");
+        Bukkit.dispatchCommand(console, "scoreboard players set @a Deaths 0");
+        Bukkit.dispatchCommand(console, "scoreboard players set @a Kills 0");
         Bukkit.dispatchCommand(console, "scoreboard objectives setdisplay sidebar " + formatEnum(gameGoal.toString()));
         Bukkit.dispatchCommand(console, "gamerule doDaylightCycle false");
         Bukkit.dispatchCommand(console, "gamerule doEntityDrops false");
         Bukkit.dispatchCommand(console, "gamerule doFallDamage false");
         Bukkit.dispatchCommand(console, "gamerule doTileDrops false");
+        Bukkit.dispatchCommand(console, "gamerule keepInventory true");
+        Bukkit.dispatchCommand(console, "gamerule naturalRegeneration true");
         ChatUtils.announce("GAME SETUP", ChatColor.GREEN);
     }
 

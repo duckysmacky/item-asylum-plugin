@@ -9,7 +9,7 @@ commands:
     usage: /<command>
   reroll:
     description: Reroll current items
-    usage: /<command>
+    usage: /<command> <player>
     aliases:
       - r
   game:

@@ -16,4 +16,5 @@ io\github\duckysmacky\itemasylum\items\catalogs\ItemCatalog.class
 io\github\duckysmacky\itemasylum\game\GameGoal.class
 io\github\duckysmacky\itemasylum\game\GameMode.class
 io\github\duckysmacky\itemasylum\items\catalogs\RangedCatalog.class
+io\github\duckysmacky\itemasylum\listeners\KillListener.class
 io\github\duckysmacky\itemasylum\items\ItemController.class
